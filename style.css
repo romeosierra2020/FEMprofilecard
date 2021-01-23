@@ -96,6 +96,7 @@ h4 {
     position: absolute;
     left: 29vw;
     top: -14.5vw;
+    border: 1vw solid white;
     border-radius: 50%;
 }
 
