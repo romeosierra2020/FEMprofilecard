@@ -16,49 +16,44 @@
 
 html {
     font-family: 'Kumbh Sans', sans-serif;
-    font-size: 100%;
+    font-size: 18px;
     overflow: hidden;
+    background-color: var(--darkCyan);
     
 }
 h1 {
-    font-size: 0.8rem;
+    font-size: .9rem;
     font-weight: bold;
     color: var(--darkBlue);
 }
 h2 {
-    font-size: 0.8rem;
+    font-size: .9rem;
     font-weight: lighter;
     color: var(--darkGray);
 }
 h3 {
-    font-size: 0.65rem;
+    font-size: 0.8rem;
     font-weight: lighter;
     color: var(--darkGray);
 }
 h4 {
-    font-size: 0.5rem;
+    font-size: 0.6rem;
     font-weight: lighter;
     color: var(--darkGray);
 }
 
 .container-top {
-    background-color: var(--darkCyan);
     transform: rotate(180deg);
     position: absolute;
     top: 0;
-    height: 51vh;
-    width: 100%;
-    background-image: url("images/bg-pattern-top.svg");
-    object-fit: cover;
+    right: 40vw;
+    height: 50vh;
 }
 .container-bottom {
-    background-color: var(--darkCyan);
     position: absolute;
+    left: 40vw;
     top: 50vh;
-    height: 50%;
-    width: 100%;
-    background-image: url("images/bg-pattern-bottom.svg");
-    object-fit: cover;
+    height: 50vh;
 }
 
 .card-container {
@@ -101,13 +96,12 @@ h4 {
     position: absolute;
     left: 29vw;
     top: -14.5vw;
-    border: 1vw solid white;
     border-radius: 50%;
 }
 
 #person {
     position: absolute;
-    top: 20vw;
+    top: 19vw;
     width: 100%;
     display: flex;
     align-items: flex-end;
@@ -115,7 +109,7 @@ h4 {
 }
 
 #name {
-    width: 30vw;
+    width: 32vw;
 
 }
 
@@ -129,8 +123,8 @@ h4 {
 #line {
     position: absolute;
     top: 39vw;
-    height: 0.2vw;
-    width: 83vw;
+    height: 0.25vw;
+    width: 84vw;
     left: 1.5vw;
     background-color: var(--darkGray);
     opacity: 0.25;
@@ -146,11 +140,56 @@ h4 {
     height: 100%;
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-around;
 }
 .stat-items {
     flex-direction: column;
     display: flex;
     text-align: center;
+    justify-content: space-between;
+}
+.attribution {
+    position: absolute;
+    top: 98vh;
+}
+
+@media screen and (min-width: 410px) {
+    .card-container {
+        height: 410px;
+        width: 357px;
+        border-radius: 16px;
+    }
+    .card-top {
+        height: 168px;
+        border-radius: 16px;
+    }
+    .card-middle {
+        top: 152px;
+        height: 160px;
+    }
+    #profile-picture {
+        height: 119px;
+        width: 119px;
+        left: 119px;
+        top: -59.5px;
+    }
+    #person {
+        top: 78px;
+    }
+    #name {
+        width: 131px;
+    }
+    #location {
+        top: 115px;
+    }
+    #line {
+        top: 160px;
+        height: 1px;
+        width: 344px;
+        left: 33px;
+    }
+    .card-bottom {
+        top: 344px;
+        height: 4px;
+    }
 }
